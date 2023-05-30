@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="public/img/meetme (1).png" type="image/x-icon">
+  <title>Real-time Chat</title>
+  <link rel="stylesheet" href="public/css/style.css" type="text/css">
+  <style>
+    #messages { margin-bottom: 20px; }
+  </style>
+</head>
+<body>
+  <h1>
+    <img src="public/img/meetme (1).png" alt="logo"><br>
+          Chat_Room</h1>
+  <div class="container"  id="messages">
+
+  </div>
+  <form id="chat-form" class="send-container">
+    <input id="chat-input" class="messageInp" autocomplete="off" />
+    <button class="btn"><img src="public/img/paper-plane.png" alt="send"></button>
+  </form>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/public/js/chat.js" ></script>
+
+</body>
+</html>
